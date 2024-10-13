@@ -37,14 +37,7 @@ The network is trained on the CIFAR-10 dataset and fine-tuned with hyperparamete
 
 ### GPU Configuration
 
-The model includes a configuration for GPU memory allocation:
-
-```python
-gpu_options = tf.compat.v1.GPUOptions(per_process_gpu_memory_fraction=0.4)
-sess = tf.compat.v1.Session(config=tf.compat.v1.ConfigProto(gpu_options=gpu_options))
-```
-
-This allows the allocation of 40% of the available GPU memory to avoid memory overload.
+The model includes a configuration for GPU memory allocation which allows the allocation of 40% of the available GPU memory to avoid memory overload.
 
 ### Notes
 
